@@ -28,6 +28,9 @@
 html, body > .fixed-footer-bar {
     margin-bottom: 40px;
 }
+
+img, object, embed { /*max-width: 100%; height: auto;*/ width: auto; }
+
 /* style de base pour le footer et prise en compte du footer fixe */	
 #footer-bar {
     height: 40px;

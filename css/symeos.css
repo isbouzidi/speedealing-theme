@@ -31,6 +31,8 @@ html, body > .fixed-footer-bar {
 
 img, object, embed { /*max-width: 100%; height: auto;*/ width: auto; }
 
+.right {float:right;}
+
 /* style de base pour le footer et prise en compte du footer fixe */	
 #footer-bar {
     height: 40px;

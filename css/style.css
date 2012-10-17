@@ -1148,12 +1148,12 @@ small.tag {
     padding: 0 !important;
     border: 0 !important;
 }
-.with-left-arrow:after {
+/*.with-left-arrow:after {
     left: 7px;
     background: url(../img/standard/sprites.png) no-repeat -209px 0;
-}
+}*/
 /* IE7 */
-.with-left-arrow > .with-arrow-after {
+/*.with-left-arrow > .with-arrow-after {
     left: 7px;
     background: url(../img/standard/sprites.png) no-repeat -209px 0;
 }
@@ -1161,13 +1161,13 @@ small.tag {
 .tabs > li > a:after {
     right: 7px;
     background: url(../img/standard/sprites.png) no-repeat -224px 0;
-}
+}*/
 /* IE7 */
-.with-right-arrow > .with-arrow-after,
+/*.with-right-arrow > .with-arrow-after,
 .tabs > li > a > .with-arrow-after {
     right: 7px;
     background: url(../img/standard/sprites.png) no-repeat -224px 0;
-}
+}*/
 
 /* Variations */
 .with-left-arrow.grey-arrow:after	{ background-position: -209px -20px; }
@@ -3886,7 +3886,7 @@ p > .button-group {
 }
 .tabs > li {
     padding: 12px 30px 12px 12px;
-    border-top: 1px solid #cccccc;
+    /*border-top: 1px solid #cccccc;*/
     color: #c0c0c0;
 }
 .tabs > li:first-child {

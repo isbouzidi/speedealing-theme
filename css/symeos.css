@@ -335,3 +335,8 @@ div.ego-scroll-menu.horizontal .ego-scroll-menu >a {
     -o-transform: scaleY(-1);
     -ms-transform: scaleY(-1);
 }
+
+/* for highchart */
+div.chart {
+    margin-bottom: 0px;
+}

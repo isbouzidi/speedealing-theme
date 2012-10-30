@@ -29,6 +29,9 @@ html, body > .fixed-footer-bar {
     margin-bottom: 40px;
 }
 
+html {overflow-y:scroll}
+body {color:#222;background-color:#eee}
+
 img, object, embed { /*max-width: 100%; height: auto;*/ width: auto; }
 
 .right {float:right;}

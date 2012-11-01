@@ -343,3 +343,14 @@ div.ego-scroll-menu.horizontal .ego-scroll-menu >a {
 div.chart {
     margin-bottom: 0px;
 }
+
+div.box_c {
+    background-image: -o-linear-gradient(bottom, #E7E8EB 25%, #DCE0E3 100%);
+    background-image: -moz-linear-gradient(bottom, #E7E8EB 25%, #DCE0E3 100%);
+    background-image: -webkit-linear-gradient(bottom, #E7E8EB 25%, #DCE0E3 100%);
+    background-image: -ms-linear-gradient(bottom, #E7E8EB 25%, #DCE0E3 100%);
+    background-image: linear-gradient(bottom, #E7E8EB 25%, #DCE0E3 100%);
+    -moz-box-shadow: 4px 4px 4px #CCC;
+    -webkit-box-shadow: 4px 4px 4px #CCC;
+    box-shadow: 4px 4px 4px #CCC;
+}

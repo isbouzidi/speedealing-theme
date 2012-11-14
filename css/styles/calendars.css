@@ -214,6 +214,9 @@
 			-moz-border-radius: 3px;
 			border-radius: 3px;
 		}
+                .cal-events > li > a {
+                    color: white;
+                }
 		.today > .cal-events > li {
 			border-color: white;
 		}

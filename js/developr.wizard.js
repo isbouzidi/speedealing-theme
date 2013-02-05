@@ -388,8 +388,9 @@
 		/**
 		 * Previous button markup - must use class 'wizard-prev'
 		 * @var string
+		 * Regis: rename wizard-previous in class with wizard-prev for avoid duplicated button
 		 */
-		controlPrev: '<button type="button" class="button glossy mid-margin-right wizard-previous float-left"><span class="button-icon anthracite-gradient"><span class="icon-backward"></span></span>Back</button>',
+		controlPrev: '<button type="button" class="button glossy mid-margin-right wizard-prev float-left"><span class="button-icon anthracite-gradient"><span class="icon-backward"></span></span>Back</button>',
 
 		/**
 		 * Next button markup - must use class 'wizard-next'

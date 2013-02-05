@@ -4099,9 +4099,10 @@ p > .button-group {
 .notification > a > h3,
 .notification > div > h3 {
     color: white;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 18px;
+    line-height: 21px;
     margin-bottom: 4px;
+    font-weight: bold;
 }
 .notification > a > b,
 .notification > div > b,

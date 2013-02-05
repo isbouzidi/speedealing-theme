@@ -33,7 +33,7 @@
 		animate = true;
 
 	// Navigable menus
-	doc.on('click', '.collapsible li, .collapsible li > span, .collapsible li > a, .collapsible li div, .collapsible li img, .collapsible li span', function(event)
+	doc.on('click', '.collapsible li, .collapsible li > span, .collapsible li > a', function(event)
 	{
 		// Only work if the element is the event's target
 		if (event.target !== this)

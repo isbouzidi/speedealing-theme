@@ -55,7 +55,7 @@
 		this.filter('form').removeClass('wizard-enabled').each(function(i)
 		{
 				// Form object
-			var form = $(this),
+			var form = $(this).addClass('wizard'),
 
 				// Options
 				settings = $.extend({}, globalSettings, form.data('wizard-options')),
@@ -245,7 +245,7 @@
 			previous = fieldset.siblings('.active');
 
 			// Validation
-			if (!previous.hasClass('current') && $.validationEngine && !form.validationEngine('validate'))
+			if (!previous.hasClass('current') && $.validationEngine && form.removeClass('validating').validationEngine('validate') === false)
 			{
 				return;
 			}
@@ -254,6 +254,12 @@
 			// Set as active
 			step.addClass('active');
 			fieldset.addClass('active').trigger('wizardenter');
+
+			// Hide validation messages
+			if ($.validationEngine)
+			{
+				form.validationEngine('hideAll');
+			}
 
 			// Previously active section
 			step.siblings('.active').removeClass('active');
@@ -388,7 +394,6 @@
 		/**
 		 * Previous button markup - must use class 'wizard-prev'
 		 * @var string
-		 * Regis: rename wizard-previous in class with wizard-prev for avoid duplicated button
 		 */
 		controlPrev: '<button type="button" class="button glossy mid-margin-right wizard-prev float-left"><span class="button-icon anthracite-gradient"><span class="icon-backward"></span></span>Back</button>',
 

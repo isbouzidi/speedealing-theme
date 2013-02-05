@@ -1573,6 +1573,15 @@ input:-moz-placeholder {
 		margin: 0 0 0 -210px;
 		width: 150px;
 	}
+	
+	/* Regis: added for install image */
+	.field-block .image,
+	.field-drop .image {
+		float: left;
+		text-align: right;
+		margin: -35px 0 0 -210px;
+		width: 150px;
+	}
 
 	/* Field drop */
 	.field-drop {

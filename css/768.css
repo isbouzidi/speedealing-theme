@@ -16,6 +16,16 @@
 	width: 30px;
 }
 
+/* Contextual elements */
+.hidden-on-mobile,
+.only-on-tablet {
+	display: block;
+}
+.hidden-on-tablet,
+.only-on-mobile {
+	display: none;
+}
+
 /* Columns */
 
 /* These styles define the columns size. They must be redefined for each responsive size */

@@ -35,7 +35,7 @@
  * 22. Tooltips
  * 23. Extra stuff
  * 24. Search Box
-*/
+ */
 
 /**
  * Z-index hierachy guide :
@@ -62,22 +62,22 @@
  * 999400 : notifications
  * 999500 : tooltips over modals and notifications
  * 999600 : open selects over modals and notifications
-*/
+ */
 
 /********************************************************/
 /*                       1. Global                      */
 /********************************************************/
 
 html {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    tap-highlight-color: rgba(0,0,0,0);
-    background: white;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+	background: white;
 }
 body, button, input, textarea {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     line-height: 16px;
-    /*color: #666666;*/
+    color: #666666;
 }
 
 
@@ -529,6 +529,7 @@ li.message-menu {
     top: 0;
     bottom: 0;
     background: url(../img/effects/glow.png) no-repeat center center;
+	pointer-events: none;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -988,22 +989,26 @@ to {		background-position: -80px 0;	}
 
 /* Blocks list */
 .blocks-list {
-    margin-left: -5px;
-    list-style-type: none;
-}
-.blocks-list > li {
-    float: left;
-    margin: 0 0 5px 5px;
-    padding: 3px 6px;
-    border-width: 1px;
-    border-style: solid;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
+	margin-left: -5px;
+	list-style-type: none;
+	}
+	.blocks-list > li {
+		float: left;
+		margin: 0 0 5px 5px;
+		padding: 3px 6px;
+		border-width: 1px;
+		border-style: solid;
+		-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+		-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 1px 1px rgba(0, 0, 0, 0.15);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	.blocks-list > li > [class^="icon-"]:before,
+	.blocks-list > li > [class*=" icon-"] {
+		border: 1px solid transparent;
+	}
 
 /* Fixed sizes */
 .fixed-size-50 > li		{ width: 36px;	}
@@ -1134,51 +1139,51 @@ small.tag {
 .with-left-arrow,
 .with-right-arrow,
 .tabs > li > a {
-    position: relative;
-}
-.with-left-arrow:after,
-.with-right-arrow:after,
-.tabs > li > a:after {
-    display: block;
-    content: '';
-    width: 15px;
-    height: 20px;
-    position: absolute;
-    top: 50%;
-    margin: -11px 0 0 0;
-    padding: 0;
-    border: 0;
-}
-/* IE7 */
-.with-arrow-after {
-    display: block;
-    width: 15px !important;
-    height: 20px !important;
-    position: absolute !important;
-    top: 50%;
-    margin: -11px 0 0 0 !important;
-    padding: 0 !important;
-    border: 0 !important;
-}
+	position: relative;
+	}
+	.with-left-arrow:after,
+	.with-right-arrow:after,
+	.tabs > li > a:after {
+		display: block;
+		content: '';
+		width: 15px;
+		height: 20px;
+		position: absolute;
+		top: 50%;
+		margin: -11px 0 0 0;
+		padding: 0;
+		border: 0;
+		}
+		/* IE7 */
+		.with-arrow-after {
+			display: block;
+			width: 15px !important;
+			height: 20px !important;
+			position: absolute !important;
+			top: 50%;
+			margin: -11px 0 0 0 !important;
+			padding: 0 !important;
+			border: 0 !important;
+		}
 /*.with-left-arrow:after {
-    left: 7px;
-    background: url(../img/standard/sprites.png) no-repeat -209px 0;
+			left: 7px;
+			background: url(../img/standard/sprites.png) no-repeat -209px 0;
 }*/
-/* IE7 */
+			/* IE7 */
 /*.with-left-arrow > .with-arrow-after {
-    left: 7px;
-    background: url(../img/standard/sprites.png) no-repeat -209px 0;
-}
-.with-right-arrow:after,
-.tabs > li > a:after {
-    right: 7px;
-    background: url(../img/standard/sprites.png) no-repeat -224px 0;
+				left: 7px;
+				background: url(../img/standard/sprites.png) no-repeat -209px 0;
+			}
+		.with-right-arrow:after,
+		.tabs > li > a:after {
+			right: 7px;
+			background: url(../img/standard/sprites.png) no-repeat -224px 0;
 }*/
-/* IE7 */
+			/* IE7 */
 /*.with-right-arrow > .with-arrow-after,
-.tabs > li > a > .with-arrow-after {
-    right: 7px;
-    background: url(../img/standard/sprites.png) no-repeat -224px 0;
+			.tabs > li > a > .with-arrow-after {
+				right: 7px;
+				background: url(../img/standard/sprites.png) no-repeat -224px 0;
 }*/
 
 /* Variations */
@@ -2166,37 +2171,49 @@ details.details > summary > h3 {
 
 /* Black title bar */
 #title-bar {
-    height: 40px;
-    line-height: 38px;
-    text-align: center;
-    z-index: 3;
-    padding: 0 10px;
-}
-.fixed-title-bar > #title-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-.with-shortcuts #title-bar {
-    padding-left: 43px;
-}
-.with-menu #title-bar {
-    padding-right: 92px;
-}
-#title-bar h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    line-height: 36px;
-    margin: 0;
-    font-size: 16px;
-    font-weight: bold;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-text-shadow: 0 -1px 0 black;
-    -moz-text-shadow: 0 -1px 0 black;
-    text-shadow: 0 -1px 0 black;
-}
+	height: 40px;
+	line-height: 38px;
+	text-align: center;
+	z-index: 3;
+	padding: 0 10px;
+	}
+	.fixed-title-bar > #title-bar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.with-shortcuts #title-bar {
+		padding-left: 43px;
+		}
+		.reversed.with-shortcuts #title-bar {
+			padding-left: 10px;
+			padding-right: 43px;
+		}
+	.with-menu #title-bar {
+		padding-right: 92px;
+		}
+		.reversed.with-menu #title-bar {
+			padding-right: 10px;
+			padding-left: 92px;
+		}
+	.reversed.with-shortcuts.with-menu #title-bar {
+		padding-right: 43px;
+		padding-left: 92px;
+	}
+	#title-bar h2 {
+		font-family: Arial, Helvetica, sans-serif;
+		color: white;
+		line-height: 36px;
+		margin: 0;
+		font-size: 16px;
+		font-weight: bold;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		-webkit-text-shadow: 0 -1px 0 black;
+		-moz-text-shadow: 0 -1px 0 black;
+		text-shadow: 0 -1px 0 black;
+	}
 
 /* Menu opener icon */
 #open-menu {
@@ -2279,9 +2296,9 @@ body.reversed #open-shortcuts {
     position: relative;
     background-color: white;
 }
-/*#main-title + .with-padding {
+#main-title + .with-padding {
         padding-top: 0 !important;
-}*/
+}
 #main-title h1,
 #main-title h2 {
     margin: 0;
@@ -2300,85 +2317,93 @@ body.reversed #open-shortcuts {
 
 /* Side tabs shortcuts */
 #shortcuts {
-    display: none;
-    position: absolute;
-    z-index: 99;
-    top: 44px;
-    left: 10px;
-    margin: 0;
-    width: 240px;
-    list-style-type: none;
-    padding: 15px 4px 5px 14px;
-    *padding-bottom: 25px;
-    border: 1px solid white;
-    background: #d9d9d9 url(../img/old-browsers/style/bg_shortcuts.png) repeat-x;
-    -webkit-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -o-background-size: 100% 100%;
-    background-size: 100% 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d9d9d9));
-    background: -webkit-linear-gradient( white, #d9d9d9 );
-    background: -moz-linear-gradient( white, #d9d9d9 );
-    background: -ms-linear-gradient( white, #d9d9d9 );
-    background: -o-linear-gradient( white, #d9d9d9 );
-    background: linear-gradient( white, #d9d9d9 );
-    -webkit-background-clip: padding-box;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
-}
-body.shortcuts-open #shortcuts {
-    display: block;
-}
-.fixed-title-bar > #shortcuts {
-    position: fixed;
-}
-#shortcuts:before {
-    display: block;
-    content: ' ';
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-bottom-color: white;
-    position: absolute;
-    bottom: 100%;
-    left: 6px;
-}
-#shortcuts > li {
-    width: 70px;
-    height: 70px;
-    float: left;
-    margin: -5px 10px 25px 0;
-}
-#shortcuts > li > a,
-#shortcuts > li > span {
-    display: block;
-    /*background-image: url(../img/standard/shortcuts.png);*/
-    background-repeat: no-repeat;
-    /*width: 70px;
-    height: 5px;
-    padding-top: 65px;*/
-    color: #666666;
-    text-align: center;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-#shortcuts > li > span {
-    color: #999999;
-}
-#shortcuts > li.current > a {
-    color: #3399cc;
-}
-.shortcut-dashboard	{ background-position: -66px -5px; }
-.shortcut-messages	{ background-position: -66px -75px; }
-.shortcut-agenda	{ background-position: -66px -145px; }
-.shortcut-contacts	{ background-position: -66px -215px; }
-.shortcut-medias	{ background-position: -66px -285px; }
-.shortcut-stats		{ background-position: -66px -355px; }
-.shortcut-settings	{ background-position: -66px -425px; }
-.shortcut-notes		{ background-position: -66px -495px; }
+	display: none;
+	position: absolute;
+	z-index: 99;
+	top: 44px;
+	left: 10px;
+	margin: 0;
+	width: 240px;
+	list-style-type: none;
+	padding: 15px 4px 5px 14px;
+	*padding-bottom: 25px;
+	border: 1px solid white;
+	background: #d9d9d9 url(../img/old-browsers/style/bg_shortcuts.png) repeat-x;
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d9d9d9));
+	background: -webkit-linear-gradient( white, #d9d9d9 );
+	background: -moz-linear-gradient( white, #d9d9d9 );
+	background: -ms-linear-gradient( white, #d9d9d9 );
+	background: -o-linear-gradient( white, #d9d9d9 );
+	background: linear-gradient( white, #d9d9d9 );
+	-webkit-background-clip: padding-box;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 1px 7px rgba(0, 0, 0, 0.8);
+	}
+	.reversed #shortcuts {
+		left: auto;
+		right: 10px;
+	}
+	body.shortcuts-open #shortcuts {
+		display: block;
+	}
+	.fixed-title-bar > #shortcuts {
+		position: fixed;
+	}
+	#shortcuts:before {
+		display: block;
+		content: ' ';
+		width: 0;
+		height: 0;
+		border: 7px solid transparent;
+		border-bottom-color: white;
+		position: absolute;
+		bottom: 100%;
+		left: 6px;
+		}
+		.reversed #shortcuts:before {
+			left: auto;
+			right: 6px;
+		}
+	#shortcuts > li {
+		width: 70px;
+		height: 70px;
+		float: left;
+		margin: -5px 10px 25px 0;
+		}
+		#shortcuts > li > a,
+		#shortcuts > li > span {
+			display: block;
+			background-image: url(../img/standard/shortcuts.png);
+			background-repeat: no-repeat;
+			width: 70px;
+			height: 5px;
+			padding-top: 65px;
+			color: #666666;
+			text-align: center;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			}
+			#shortcuts > li > span {
+				color: #999999;
+			}
+			#shortcuts > li.current > a {
+				color: #3399cc;
+			}
+			.shortcut-dashboard	{ background-position: -66px -5px; }
+			.shortcut-messages	{ background-position: -66px -75px; }
+			.shortcut-agenda	{ background-position: -66px -145px; }
+			.shortcut-contacts	{ background-position: -66px -215px; }
+			.shortcut-medias	{ background-position: -66px -285px; }
+			.shortcut-stats		{ background-position: -66px -355px; }
+			.shortcut-settings	{ background-position: -66px -425px; }
+			.shortcut-notes		{ background-position: -66px -495px; }
 
 span.shortcut-dashboard	{ background-position: 1px -5px; }
 span.shortcut-messages	{ background-position: 1px -75px; }
@@ -4151,22 +4176,21 @@ p > .button-group {
 
 /* Root elements */
 #tooltips, #tooltips-over {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#tooltips {
-    z-index: 999100;
-}
-#tooltips-over {
-    z-index: 999500;
-}
-#tooltips .message,
-#tooltips-over .message {
-    position: absolute;
-    white-space: nowrap;
-    max-width: 300px;
-}
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	#tooltips {
+		z-index: 999100;
+	}
+	#tooltips-over {
+		z-index: 999500;
+	}
+	.tooltip {
+		position: absolute;
+		white-space: nowrap;
+		max-width: 300px;
+	}
 
 /* Tooltips inserted inside some elements */
 .message.inner-tooltip {

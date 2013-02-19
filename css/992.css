@@ -16,15 +16,27 @@
 	width: 40px;
 }
 
+/* Contextual elements */
+.hidden-on-tablet,
+.only-on-desktop {
+	display: block;
+}
+.hidden-on-desktop,
+.only-on-tablet {
+	display: none;
+}
+
 /* 7. Title bar */
 #title-bar {
 	height: 34px;
 	line-height: 32px;
 	border-top: 1px solid #666666;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
 	}
 	#title-bar h2 {
 		height: 34px;
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 32px;
 		left: 0;
 		right: 0;
@@ -34,17 +46,10 @@
 #title-bar ~ #main {
 	margin-top: 35px;
 	}
-	/*.with-menu #title-bar {
-		padding-right: 10px;
-	}*/
-	#title-bar ~ #menu {
+	#title-bar ~ #menu,
+	#title-bar ~ #shortcuts {
 		top: 35px;
 	}
-	/*#title-bar ~ #shortcuts {
-	/*#title-bar ~ #menu {
-		top: 4px;
-	}*/
-	
 body.with-menu #main {
 	margin-right: 260px;
 	-webkit-transition: margin-right 200ms;

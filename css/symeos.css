@@ -1,14 +1,10 @@
 @CHARSET "UTF-8";
-@font-face {
-    font-family: handwritten_font;
-    src: url('../fonts/permanent-marker/PermanentMarker.ttf');	
-}
-@font-face {
+/*@font-face {
     font-family: "Open Sans Condensed";
     font-style: normal;
     font-weight: 300;
     src: url("../fonts/google/OpenSans-CondensedLight.woff") format("woff");
-}
+}*/
 @font-face {
     font-family: "Terminal Dosis";
     font-style: normal;
@@ -59,9 +55,6 @@ body {color:#222}
     margin-bottom: 40px;
 }
 
-#profile .name {
-    font-family: 'handwritten_font';
-}
 /* Custom buttom : pour gérer le back button, home button, etc... */
 .back-button {
     display: inline-block; 

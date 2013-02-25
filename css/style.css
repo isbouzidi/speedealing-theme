@@ -2305,15 +2305,6 @@ body.reversed #open-shortcuts {
     padding: 0;
 }
 
-/* Only for Firefox*/
-@-moz-document url-prefix() {
-	#main-title h1,
-	#main-title h2 {
-    margin-bottom: 26px;
-    padding: 0;
-}
-}
-
 #main-title h2 {
     position: absolute;
     top: 17px;

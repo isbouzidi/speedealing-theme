@@ -254,23 +254,27 @@ h2 {
 					width: 204px;
 				}
 
-			.shortcut-dashboard,	span.shortcut-dashboard	{ background-position: 0 0; }
-			.shortcut-messages,		span.shortcut-messages	{ background-position: 0 -70px; }
-			.shortcut-agenda,		span.shortcut-agenda	{ background-position: 0 -140px; }
-			.shortcut-contacts,		span.shortcut-contacts	{ background-position: 0 -210px; }
-			.shortcut-medias,		span.shortcut-medias	{ background-position: 0 -280px; }
-			.shortcut-stats,		span.shortcut-stats		{ background-position: 0 -350px; }
-			.shortcut-settings,		span.shortcut-settings	{ background-position: 0 -420px; }
-			.shortcut-notes,		span.shortcut-notes		{ background-position: 0 -490px; }
+			.shortcut-dashboard,	span.shortcut-dashboard		{ background-position: 0 0; }
+			.shortcut-messages,		span.shortcut-messages		{ background-position: 0 -70px; }
+			.shortcut-agenda,		span.shortcut-agenda		{ background-position: 0 -140px; }
+			.shortcut-contacts,		span.shortcut-contacts		{ background-position: 0 -210px; }
+			.shortcut-medias,		span.shortcut-medias		{ background-position: 0 -280px; }
+			.shortcut-stats,		span.shortcut-stats			{ background-position: 0 -350px; }
+			.shortcut-settings,		span.shortcut-settings		{ background-position: 0 -420px; }
+			.shortcut-notes,		span.shortcut-notes			{ background-position: 0 -490px; }
+			.shortcut-trash-empty,	span.shortcut-trash-empty	{ background-position: 0 -560px; }
+			.shortcut-trash-full,	span.shortcut-trash-full	{ background-position: 0 -630px; }
 
-				body.reversed a.shortcut-dashboard	{ background-position: 68px 0; }
-				body.reversed a.shortcut-messages	{ background-position: 68px -70px; }
-				body.reversed a.shortcut-agenda		{ background-position: 68px -140px; }
-				body.reversed a.shortcut-contacts	{ background-position: 68px -210px; }
-				body.reversed a.shortcut-medias		{ background-position: 68px -280px; }
-				body.reversed a.shortcut-stats		{ background-position: 68px -350px; }
-				body.reversed a.shortcut-settings	{ background-position: 68px -420px; }
-				body.reversed a.shortcut-notes		{ background-position: 68px -490px; }
+				body.reversed a.shortcut-dashboard		{ background-position: 68px 0; }
+				body.reversed a.shortcut-messages		{ background-position: 68px -70px; }
+				body.reversed a.shortcut-agenda			{ background-position: 68px -140px; }
+				body.reversed a.shortcut-contacts		{ background-position: 68px -210px; }
+				body.reversed a.shortcut-medias			{ background-position: 68px -280px; }
+				body.reversed a.shortcut-stats			{ background-position: 68px -350px; }
+				body.reversed a.shortcut-settings		{ background-position: 68px -420px; }
+				body.reversed a.shortcut-notes			{ background-position: 68px -490px; }
+				body.reversed a.shortcut-trash-empty	{ background-position: 68px -560px; }
+				body.reversed a.shortcut-trash-full		{ background-position: 68px -630px; }
 
 			#shortcuts > li > a:before,
 			#shortcuts > li:after {
@@ -297,14 +301,16 @@ h2 {
 						border-radius: 0 7px 7px 0;
 					}
 
-					a.shortcut-dashboard:before	{ background-position: -70px -5px; }
-					a.shortcut-messages:before	{ background-position: -70px -75px; }
-					a.shortcut-agenda:before	{ background-position: -70px -145px; }
-					a.shortcut-contacts:before	{ background-position: -70px -215px; }
-					a.shortcut-medias:before	{ background-position: -70px -285px; }
-					a.shortcut-stats:before		{ background-position: -70px -355px; }
-					a.shortcut-settings:before	{ background-position: -70px -425px; }
-					a.shortcut-notes:before		{ background-position: -70px -495px; }
+					a.shortcut-dashboard:before		{ background-position: -70px -5px; }
+					a.shortcut-messages:before		{ background-position: -70px -75px; }
+					a.shortcut-agenda:before		{ background-position: -70px -145px; }
+					a.shortcut-contacts:before		{ background-position: -70px -215px; }
+					a.shortcut-medias:before		{ background-position: -70px -285px; }
+					a.shortcut-stats:before			{ background-position: -70px -355px; }
+					a.shortcut-settings:before		{ background-position: -70px -425px; }
+					a.shortcut-notes:before			{ background-position: -70px -495px; }
+					a.shortcut-trash-empty:before	{ background-position: -70px -565px; }
+					a.shortcut-trash-full:before	{ background-position: -70px -635px; }
 
 				#shortcuts > li:after {
 					right: 0;

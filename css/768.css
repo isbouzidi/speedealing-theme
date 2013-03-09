@@ -395,6 +395,11 @@ h2 {
 			#shortcuts > li.at-bottom {
 				position: absolute;
 				left: 0;
+				bottom: 70px;
+			}
+			#shortcuts > li.at-bottom-trash {
+				position: absolute;
+				left: 0;
 				bottom: 0;
 			}
 

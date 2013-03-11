@@ -2048,7 +2048,7 @@ details.details > summary > h3 {
 .icon-mail:before				{ content: '%'; }
 .icon-pencil:before				{ content: '&'; }
 .icon-paperclip:before			{ content: '\''; }
-							   .icon-reply:before				{ content: '('; }
+.icon-reply:before				{ content: '('; }
 .icon-replay-all:before			{ content: ')'; }
 .icon-fwd:before				{ content: '*'; }
 .icon-user:before				{ content: '+'; }
@@ -2163,6 +2163,12 @@ details.details > summary > h3 {
 .icon-ellipsis:before			{ content: 'ö'; }
 .icon-bullet-list:before		{ content: '®'; }
 .icon-creative-commons:before	{ content: '©'; }
+
+/* Object icon by Regis */
+.icon-object-product:before		{ content: url(../img/object_product.png); }
+.icon-object-user:before		{ content: url(../img/object_user.png); }
+.icon-object-company:before		{ content: url(../img/object_company.png); }
+.icon-object-societe:before		{ content: url(../img/object_company.png); }
 
 
 /********************************************************/
@@ -2397,23 +2403,27 @@ body.shortcuts-open #shortcuts {
 #shortcuts > li.current > a {
 	color: #3399cc;
 }
-.shortcut-dashboard	{ background-position: -66px -5px; }
-.shortcut-messages	{ background-position: -66px -75px; }
-.shortcut-agenda	{ background-position: -66px -145px; }
-.shortcut-contacts	{ background-position: -66px -215px; }
-.shortcut-medias	{ background-position: -66px -285px; }
-.shortcut-stats		{ background-position: -66px -355px; }
-.shortcut-settings	{ background-position: -66px -425px; }
-.shortcut-notes		{ background-position: -66px -495px; }
+.shortcut-dashboard		{ background-position: -66px -5px; }
+.shortcut-messages		{ background-position: -66px -75px; }
+.shortcut-agenda		{ background-position: -66px -145px; }
+.shortcut-contacts		{ background-position: -66px -215px; }
+.shortcut-medias		{ background-position: -66px -285px; }
+.shortcut-stats			{ background-position: -66px -355px; }
+.shortcut-settings		{ background-position: -66px -425px; }
+.shortcut-notes			{ background-position: -66px -495px; }
+.shortcut-trash-empty	{ background-position: -66px -565px; }
+.shortcut-trash-full	{ background-position: -66px -635px; }
 
-span.shortcut-dashboard	{ background-position: 1px -5px; }
-span.shortcut-messages	{ background-position: 1px -75px; }
-span.shortcut-agenda	{ background-position: 1px -145px; }
-span.shortcut-contacts	{ background-position: 1px -215px; }
-span.shortcut-medias	{ background-position: 1px -285px; }
-span.shortcut-stats		{ background-position: 1px -355px; }
-span.shortcut-settings	{ background-position: 1px -425px; }
-span.shortcut-notes		{ background-position: 1px -495px; }
+span.shortcut-dashboard		{ background-position: 1px -5px; }
+span.shortcut-messages		{ background-position: 1px -75px; }
+span.shortcut-agenda		{ background-position: 1px -145px; }
+span.shortcut-contacts		{ background-position: 1px -215px; }
+span.shortcut-medias		{ background-position: 1px -285px; }
+span.shortcut-stats			{ background-position: 1px -355px; }
+span.shortcut-settings		{ background-position: 1px -425px; }
+span.shortcut-notes			{ background-position: 1px -495px; }
+span.shortcut-trash-empty	{ background-position: 1px -565px; }
+span.shortcut-trash-full	{ background-position: 1px -635px; }
 
 /* Sidebar/drop-down menu */
 #menu {

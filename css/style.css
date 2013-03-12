@@ -2167,8 +2167,12 @@ details.details > summary > h3 {
 /* Object icon by Regis */
 .icon-object-product:before		{ content: url(../img/object_product.png); }
 .icon-object-user:before		{ content: url(../img/object_user.png); }
-.icon-object-company:before		{ content: url(../img/object_company.png); }
-.icon-object-societe:before		{ content: url(../img/object_company.png); }
+.icon-object-propal:before		{ content: url(../img/object_propal.png); }
+
+/* For backward compatibility by Regis */
+.icon-object-company:before, .icon-object-societe:before	{ content: url(../img/object_company.png); }
+.icon-object-invoice:before, .icon-object-facture:before	{ content: url(../img/object_invoice.png); }
+.icon-object-order:before, .icon-object-commande:before		{ content: url(../img/object_order.png); }
 
 
 /********************************************************/

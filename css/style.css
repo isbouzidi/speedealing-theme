@@ -2165,9 +2165,13 @@ details.details > summary > h3 {
 .icon-creative-commons:before	{ content: '©'; }
 
 /* Object icon by Regis */
+.icon-object-default:before		{ content: url(../img/object_default.png); }
 .icon-object-product:before		{ content: url(../img/object_product.png); }
 .icon-object-user:before		{ content: url(../img/object_user.png); }
 .icon-object-propal:before		{ content: url(../img/object_propal.png); }
+.icon-object-documents:before	{ content: url(../img/object_documents.png); }
+.icon-object-notes:before		{ content: url(../img/object_notes.png); }
+.icon-object-price:before		{ content: url(../img/object_price.png); }
 
 /* For backward compatibility by Regis */
 .icon-object-company:before, .icon-object-societe:before	{ content: url(../img/object_company.png); }

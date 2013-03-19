@@ -1112,7 +1112,9 @@ to {		background-position: -80px 0;	}
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    font-size: 10px;
+	border-width: 1px;
+    border-style: solid;
+    /*font-size: 10px;*/
 }
 .ie9 .tag {
     padding: 1px 4px;
@@ -1120,11 +1122,7 @@ to {		background-position: -80px 0;	}
 small.tag {
     font-size: 10px;
     line-height: 14px;
-    text-transform: uppercase;
-    padding: 0 2px;
     vertical-align: 1px;
-    border-width: 1px;
-    border-style: solid;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2048,7 +2046,7 @@ details.details > summary > h3 {
 .icon-mail:before				{ content: '%'; }
 .icon-pencil:before				{ content: '&'; }
 .icon-paperclip:before			{ content: '\''; }
-.icon-reply:before				{ content: '('; }
+							   .icon-reply:before				{ content: '('; }
 .icon-replay-all:before			{ content: ')'; }
 .icon-fwd:before				{ content: '*'; }
 .icon-user:before				{ content: '+'; }

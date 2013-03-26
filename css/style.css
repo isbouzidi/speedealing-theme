@@ -705,6 +705,12 @@ to {		background-position: -80px 0;	}
 .columns:last-child {
     margin-bottom: -20px;
 }
+/* Only Firefox */
+/*@-moz-document url-prefix() {
+	.columns:last-child {
+		margin-bottom: 0px;
+	}
+}*/
 .columns > div,
 .columns > form {
     float: left;
@@ -2310,7 +2316,7 @@ body.reversed #open-shortcuts {
     background-color: white;
 }
 #main-title + .with-padding {
-	padding-top: 0 !important;
+	padding-top: 1px !important;
 }
 #main-title h1,
 #main-title h2 {

@@ -2183,6 +2183,12 @@ details.details > summary > h3 {
 .icon-object-order:before, .icon-object-commande:before		{ content: url(../img/object_order.png); }
 .icon-object-contact:before, .icon-object-contact:before	{ content: url(../img/object_user.png); }
 
+/* Action icon by Regis */
+.action-edit, .action-delete, .action-restore	{ cursor: pointer; }
+.icon-action-edit:before		{ content: url(../img/action_edit.png); }
+.icon-action-delete:before		{ content: url(../img/action_delete.png); }
+.icon-action-restore:before		{ content: url(../img/action_restore.png); }
+
 
 /********************************************************/
 /*               14. Main layout elements               */

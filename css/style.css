@@ -2184,8 +2184,9 @@ details.details > summary > h3 {
 .icon-object-contact:before, .icon-object-contact:before	{ content: url(../img/object_user.png); }
 
 /* Action icon by Regis */
-.action-edit, .action-delete, .action-restore	{ cursor: pointer; }
+.action-edit, .action-trash, .action-delete, .action-restore	{ cursor: pointer; }
 .icon-action-edit:before		{ content: url(../img/action_edit.png); }
+.icon-action-trash:before		{ content: url(../img/action_delete.png); }
 .icon-action-delete:before		{ content: url(../img/action_delete.png); }
 .icon-action-restore:before		{ content: url(../img/action_restore.png); }
 

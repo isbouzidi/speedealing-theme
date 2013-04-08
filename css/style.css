@@ -2170,6 +2170,7 @@ details.details > summary > h3 {
 
 /* Object icon by Regis */
 .icon-object-default:before		{ content: url(../img/object_default.png); }
+.icon-object-config:before		{ content: url(../img/object_config.png); }
 .icon-object-product:before		{ content: url(../img/object_product.png); }
 .icon-object-user:before		{ content: url(../img/object_user.png); }
 .icon-object-propal:before		{ content: url(../img/object_propal.png); }

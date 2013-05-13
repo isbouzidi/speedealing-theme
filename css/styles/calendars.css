@@ -527,6 +527,7 @@
 					display: block;
 					margin: -2px -2px -2px -3px;
 					padding: 2px 2px 2px 3px;
+					color: white;
 				}
 			.calendar.fluid .cal-events > li.important,
 			.calendar.large .cal-events > li.important,

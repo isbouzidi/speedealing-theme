@@ -705,6 +705,12 @@ to {		background-position: -80px 0;	}
 .columns:last-child {
     margin-bottom: -20px;
 }
+/* Only Firefox */
+/*@-moz-document url-prefix() {
+	.columns:last-child {
+		margin-bottom: 0px;
+	}
+}*/
 .columns > div,
 .columns > form {
     float: left;
@@ -1112,7 +1118,9 @@ to {		background-position: -80px 0;	}
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    font-size: 10px;
+	border-width: 1px;
+    border-style: solid;
+    /*font-size: 10px;*/
 }
 .ie9 .tag {
     padding: 1px 4px;
@@ -1120,11 +1128,7 @@ to {		background-position: -80px 0;	}
 small.tag {
     font-size: 10px;
     line-height: 14px;
-    text-transform: uppercase;
-    padding: 0 2px;
     vertical-align: 1px;
-    border-width: 1px;
-    border-style: solid;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -2164,6 +2168,29 @@ details.details > summary > h3 {
 .icon-bullet-list:before		{ content: '®'; }
 .icon-creative-commons:before	{ content: '©'; }
 
+/* Object icon by Regis */
+.icon-object-default:before		{ content: url(../img/object_default.png); }
+.icon-object-config:before		{ content: url(../img/object_config.png); }
+.icon-object-product:before		{ content: url(../img/object_product.png); }
+.icon-object-user:before		{ content: url(../img/object_user.png); }
+.icon-object-propal:before		{ content: url(../img/object_propal.png); }
+.icon-object-documents:before	{ content: url(../img/object_documents.png); }
+.icon-object-notes:before		{ content: url(../img/object_notes.png); }
+.icon-object-price:before		{ content: url(../img/object_price.png); }
+
+/* For backward compatibility by Regis */
+.icon-object-company:before, .icon-object-societe:before	{ content: url(../img/object_company.png); }
+.icon-object-invoice:before, .icon-object-facture:before	{ content: url(../img/object_invoice.png); }
+.icon-object-order:before, .icon-object-commande:before		{ content: url(../img/object_order.png); }
+.icon-object-contact:before, .icon-object-contact:before	{ content: url(../img/object_user.png); }
+
+/* Action icon by Regis */
+.action-edit, .action-trash, .action-delete, .action-restore	{ cursor: pointer; }
+.icon-action-edit:before		{ content: url(../img/action_edit.png); }
+.icon-action-trash:before		{ content: url(../img/action_delete.png); }
+.icon-action-delete:before		{ content: url(../img/action_delete.png); }
+.icon-action-restore:before		{ content: url(../img/action_restore.png); }
+
 
 /********************************************************/
 /*               14. Main layout elements               */
@@ -2297,7 +2324,7 @@ body.reversed #open-shortcuts {
     background-color: white;
 }
 #main-title + .with-padding {
-	padding-top: 0 !important;
+	padding-top: 1px !important;
 }
 #main-title h1,
 #main-title h2 {
@@ -2397,23 +2424,27 @@ body.shortcuts-open #shortcuts {
 #shortcuts > li.current > a {
 	color: #3399cc;
 }
-.shortcut-dashboard	{ background-position: -66px -5px; }
-.shortcut-messages	{ background-position: -66px -75px; }
-.shortcut-agenda	{ background-position: -66px -145px; }
-.shortcut-contacts	{ background-position: -66px -215px; }
-.shortcut-medias	{ background-position: -66px -285px; }
-.shortcut-stats		{ background-position: -66px -355px; }
-.shortcut-settings	{ background-position: -66px -425px; }
-.shortcut-notes		{ background-position: -66px -495px; }
+.shortcut-dashboard		{ background-position: -66px -5px; }
+.shortcut-messages		{ background-position: -66px -75px; }
+.shortcut-agenda		{ background-position: -66px -145px; }
+.shortcut-contacts		{ background-position: -66px -215px; }
+.shortcut-medias		{ background-position: -66px -285px; }
+.shortcut-stats			{ background-position: -66px -355px; }
+.shortcut-settings		{ background-position: -66px -425px; }
+.shortcut-notes			{ background-position: -66px -495px; }
+.shortcut-trash-empty	{ background-position: -66px -565px; }
+.shortcut-trash-full	{ background-position: -66px -635px; }
 
-span.shortcut-dashboard	{ background-position: 1px -5px; }
-span.shortcut-messages	{ background-position: 1px -75px; }
-span.shortcut-agenda	{ background-position: 1px -145px; }
-span.shortcut-contacts	{ background-position: 1px -215px; }
-span.shortcut-medias	{ background-position: 1px -285px; }
-span.shortcut-stats		{ background-position: 1px -355px; }
-span.shortcut-settings	{ background-position: 1px -425px; }
-span.shortcut-notes		{ background-position: 1px -495px; }
+span.shortcut-dashboard		{ background-position: 1px -5px; }
+span.shortcut-messages		{ background-position: 1px -75px; }
+span.shortcut-agenda		{ background-position: 1px -145px; }
+span.shortcut-contacts		{ background-position: 1px -215px; }
+span.shortcut-medias		{ background-position: 1px -285px; }
+span.shortcut-stats			{ background-position: 1px -355px; }
+span.shortcut-settings		{ background-position: 1px -425px; }
+span.shortcut-notes			{ background-position: 1px -495px; }
+span.shortcut-trash-empty	{ background-position: 1px -565px; }
+span.shortcut-trash-full	{ background-position: 1px -635px; }
 
 /* Sidebar/drop-down menu */
 #menu {
